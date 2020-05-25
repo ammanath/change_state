@@ -11,10 +11,13 @@ class _ChangeColorState extends State<ChangeColor> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Change state',
-        home: Scaffold(
-            appBar: AppBar(
+      title: 'Change state',
+      home: Scaffold(
+        appBar: AppBar(
           title: Text('Change'),
-        )));
+        ),
+        body: Text('content'),
+      ),
+    );
   }
 }
