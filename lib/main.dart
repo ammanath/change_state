@@ -34,9 +34,11 @@ class _ChangeColorState extends State<ChangeColor> {
   }
 
   void doMult() {
-    setState(() {
-      num1 = int.parse(t1.text);
+    num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
+
+    setState(() {
+      
       sum = num1 * num2;
     });
   }
@@ -58,10 +60,11 @@ class _ChangeColorState extends State<ChangeColor> {
   }
 
 void doClear() {
-  setState(() {
   t1.text='0';
   t2.text='0';
-    
+  setState(() {
+  
+    sum=0;
   });
   }
 
