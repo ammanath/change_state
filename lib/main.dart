@@ -35,10 +35,9 @@ class _ChangeColorState extends State<ChangeColor> {
 
   void doMult() {
     num1 = int.parse(t1.text);
-      num2 = int.parse(t2.text);
+    num2 = int.parse(t2.text);
 
     setState(() {
-      
       sum = num1 * num2;
     });
   }
@@ -59,13 +58,12 @@ class _ChangeColorState extends State<ChangeColor> {
     });
   }
 
-void doClear() {
-  t1.text='0';
-  t2.text='0';
-  setState(() {
-  
-    sum=0;
-  });
+  void doClear() {
+    t1.text = '0';
+    t2.text = '0';
+    setState(() {
+      sum = 0;
+    });
   }
 
   @override
@@ -141,13 +139,10 @@ void doClear() {
                       child: Text('Clear'),
                       color: Colors.redAccent,
                       onPressed: doClear,
-                                          ),
-                                          
-                                        ],
-                                      ),
-                                    ],
-                                  )));
-                        }
-                      
-                        
+                    ),
+                  ],
+                ),
+              ],
+            )));
+  }
 }
